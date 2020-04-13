@@ -1,0 +1,378 @@
+body {
+	background-color: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	color: white;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url(../img/capa-madmax2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+
+header .header-container {
+	width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: space-between;
+}
+
+header .header-container:after {
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+header .header-menu {
+	padding: 20px 0 20px 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	z-index: 2;
+	position: relative;
+}
+
+header .header-menu .header-menu-center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	padding-inline-start: 0px;
+}
+
+header .header-menu .header-menu-center li {
+	margin: 0 25px;
+}
+
+header .header-menu .header-menu-center li a {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+header .header-menu .header-menu-center li a:hover {
+	color: #e4bb23;
+}
+
+header .header-menu .header-menu-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .header-menu .header-menu-right .user-pic {
+	border-radius: 100%;
+	height: 45px;
+	margin-right: 15px;
+	overflow: hidden;
+  width: 45px;
+}
+
+header .header-menu .header-menu-right .user-pic img {
+	width: 100%;
+	height: auto;
+}
+
+header .header-menu .header-menu-right .user-name {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header .header-movie {
+	padding: 20px 0 20px 0;
+	z-index: 2;
+	position: relative;
+}
+
+header .header-movie h1 {
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+header .header-movie .header-submenu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 15px 0 30px;
+	padding-inline-start: 0px;
+}
+
+header .header-movie .header-submenu li {
+	margin-right: 15px;
+}
+
+header .header-movie .header-submenu li a {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+header .header-movie .header-submenu li a:hover {
+	color: #e4bb23;
+}
+
+header .header-movie .header-button {
+	display: inline-block;
+	padding: 15px 50px;
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+}
+
+header .header-movie .header-button a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.5em;
+}
+
+header .header-movie .header-button i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+header .header-movie .header-info {
+	padding: 20px 0;
+	font-size: 1.4em;
+}
+
+header .header-movie .header-info p:last-child {
+	color: #bc9a1d;
+}
+
+main nav {
+	color: #000;
+	margin-bottom: 30px;
+}
+
+main nav ul {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+	justify-content: center;
+}
+
+main nav ul li {
+	margin: 0 20px;
+}
+
+main nav ul li a {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+	text-transform: uppercase;
+}
+
+main nav ul li a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+main .movies-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+main .movie {
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 24%;	
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main .movie .movie-con {
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+main .movie .movie-con .movie-poster {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+main .movie .movie-con .movie-poster img {
+	border-radius: 8px 8px 0 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.hid-play {
+	align-items: center;
+	border-radius: 8px 8px 0 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+.hid-play h3 {
+	color: #e4bb23;
+	font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;	
+}
+
+.hid-play i {
+	color: #fff;
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;	
+}
+
+.hid-play i:hover {
+	color: #e4bb23;
+}
+
+.movie:hover .hid-play {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .movie .movie-description {
+	padding: 10px;
+	
+}
+
+main .movie .movie-description h2 {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+main .movie .movie-description .movie-genre {
+	margin: 10px 0;
+	color: #e4bb23;	
+	font-size: 1.2em;
+}
+
+main .movie .movie-description .movie-genre a {
+	text-decoration: none;
+	color: #e4bb23;	
+}
+
+main .movie .movie-description .movie-genre a:hover {
+	text-decoration: underline;
+}
+
+main .movie .movie-description i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+main .movie .movie-description i:hover {
+	color: #e74c3c;
+} 
+
+main .movie .movie-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 2em;
+	margin: 0;
+}
+
+main .movie .movie-footer p {
+	margin: 0;
+	font-weight: bold;
+}
+
+footer {
+	background-color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;	
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+footer ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+footer ul li {
+	margin: 0 20px;
+}
+
+footer ul li:last-child {
+	margin-right: 0;
+}
+
+footer ul li a {
+	font-size: 2.5em;
+	text-decoration: none;
+	color: #bababa;
+	transition: all 0.2s ease-in-out;
+}
+
+.twitter:hover {
+	color: #55acee;
+}
+
+.facebook:hover {
+	color: #3b5998;
+}
+
+.instagram:hover {
+	color: #e95950;
+}
